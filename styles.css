@@ -32,19 +32,20 @@
 }
 
 .header-logo {
-    margin: auto ;
+    margin: auto;
 }
 
 .survey-form {
-    
+
     background-color: var(--secondary-color);
     margin: 0 15px;
     padding: 20px 45px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 }
+
 .form-header {
     background-color: var(--main-color);
     height: 80px;
@@ -83,7 +84,7 @@
     width: 100%;
     padding: 20px;
     margin: 10px;
-    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.5);
     height: 50px;
     border: 1px solid var(--input-border-color);
     background: var(--secondary-color);
@@ -162,30 +163,35 @@ legend {
 
 /* Dekstop */
 @media only screen and (min-width: 767px) {
- 
+
     .survey-form {
         max-width: 620px;
         margin: 0 auto;
     }
+
     .form-header {
         max-width: 620px;
         margin: 33px auto 0;
     }
+
     .form-submit-button {
-        width: 333.61px; 
+        width: 333.61px;
     }
+
     .ad-wrapper {
         max-width: 404px;
         margin: 30px auto;
     }
+
     legend {
         border-left: 53px solid transparent;
         border-right: 53px solid transparent;
     }
+
     .ad-heading {
         margin-bottom: 15px;
     }
-          
+
 }
 
 /* Color transition  */
@@ -211,11 +217,11 @@ legend {
 
 /* Retina Optimization */
 
-@media only screen and(-webkit-min-device-pixel-ratio: 2), 
-only screen and (min--moz-device-pixel-ratio: 2), 
-only screen and (-o-min-device-pixel-ratio: 2/1), 
-only screen and (min-device-pixel-ratio: 2), 
-only screen and (min-resolution: 192dpi), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
 
     .header-logo img {
