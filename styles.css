@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+:root {
+    --main-bg-color: #ECF8FB;
+    --secondary-bg-color: #EFEFEF;
+    --main-font-color: #747375;
+    --secondary-font-color: #FFFFFF;
+    --accent-color: #A0BC57;
+    --button-color: #F6931D;
+    --main-color: #545253;
+    --secondary-color: #FFFFFF;
+    --link-color: #6EB7C2;
+    --input-border-color: #d8d8d8;
+
+    --bold: 600;
+    --normal: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--main-font-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-header {
+    background-color: var(--main-color);
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin: auto ;
+}
+
+.survey-form {
+    
+    background-color: var(--secondary-color);
+    margin: 0 15px;
+    padding: 20px 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.form-header {
+    background-color: var(--main-color);
+    height: 80px;
+    padding: 6px;
+    margin: 33px 15px 0;
+}
+
+.form-header p {
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+
+    font-size: 18px;
+    font-weight: var(--bold);
+    color: var(--secondary-font-color);
+    line-height: 34px;
+}
+
+.form-submit-button {
+    width: 100%;
+    height: 48px;
+    background: #f6931d;
+    border-radius: 21px;
+    color: var(--secondary-font-color);
+    text-transform: uppercase;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.form-submit-button:disabled {
+    background-color: #747375;
+}
+
+.form-input-field {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+    height: 50px;
+    border: 1px solid var(--input-border-color);
+    background: var(--secondary-color);
+    background-blend-mode: normal;
+    border-radius: 4px;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+}
+
+.form-group input {
+    margin: 10px 0;
+}
+
+.form-group input:first-child {
+    margin-right: 20px;
+}
+
+.form-group input:last-child {
+    width: 50%;
+}
+
+.form-input-field::placeholder {
+    font-weight: var(--normal);
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.ad-wrapper {
+
+    margin: 30px 15px;
+    border: 2px solid var(--accent-color);
+}
+
+legend {
+    width: auto;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.advertising {
+    background-color: var(--secondary-color);
+    margin: 30px;
+    padding: 15px 20px 20px 20px;
+}
+
+.ad-heading {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    font-size: 12px;
+}
+
+.ad-subheading {
+    margin-bottom: 15px;
+    font-weight: var(--normal);
+    font-size: 20px;
+}
+
+.ad-content {
+    font-size: 14px;
+}
+
+.ad-link {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: var(--bold);
+
+}
+
+/* Dekstop */
+@media only screen and (min-width: 767px) {
+ 
+    .survey-form {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+    .form-header {
+        max-width: 620px;
+        margin: 33px auto 0;
+    }
+    .form-submit-button {
+        width: 333.61px; 
+    }
+    .ad-wrapper {
+        max-width: 404px;
+        margin: 30px auto;
+    }
+    legend {
+        border-left: 53px solid transparent;
+        border-right: 53px solid transparent;
+    }
+    .ad-heading {
+        margin-bottom: 15px;
+    }
+          
+}
+
+/* Color transition  */
+.color-transition {
+    width: 100%;
+    animation: backgroundTransition 10s infinite;
+    background-color: var(--main-bg-color);
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-color: var(--main-bg-color);
+    }
+
+    50% {
+        background-color: var(--secondary-bg-color);
+    }
+
+    100% {
+        background-color: var(--main-bg-color);
+    }
+}
+
+/* Retina Optimization */
+
+@media only screen and(-webkit-min-device-pixel-ratio: 2), 
+only screen and (min--moz-device-pixel-ratio: 2), 
+only screen and (-o-min-device-pixel-ratio: 2/1), 
+only screen and (min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 192dpi), 
+only screen and (min-resolution: 2dppx) {
+
+    .header-logo img {
+        width: 100px;
+        height: 100px;
+    }
+}
