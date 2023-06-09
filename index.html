@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <!-- Javascript -->
+    <script type="module" src="scripts.js"></script>
+</head>
+
+<body class='color-transition'>
+    <header class="main-header">
+        <img class="header-logo" src="assets/logo.png" alt="">
+    </header>
+
+    <div class="form-header">
+        <p class="form-header-content"></p>
+    </div>
+    <form novalidate id="survey-form" class="survey-form">
+        
+        <input type="text" name="name" id="name" class="form-input-field" placeholder="Name" required minlength="2" />
+        
+        <div class="form-group">
+            <input type="text" name="name" id="city" class="form-input-field" placeholder="City"/>
+
+            <input type="text" name="name" id="state" class="form-input-field" placeholder="State"/>
+        </div>
+
+        <input type="email" name="email" id="email" class="form-input-field" placeholder="Email Address" required />
+
+        <input type="tel" name="phone" id="number" class="form-input-field" placeholder="Phone number" required pattern="\(\d{3}\) \d{3}-\d{4}"/>
+
+        <button type="submit" id="submit" class="form-submit-button">
+            Enter to win
+        </button>
+    </form>
+
+   
+        <fieldset class="ad-wrapper">
+            <legend class="ad-wrapper-legend">
+            </legend>
+            <div class="advertising">
+                <p class="ad-heading"></p>
+                <p class="ad-subheading"></p>
+                <p class="ad-content"></p>
+                
+                
+        
+            </div>
+        </fieldset>
+  
+
+</body>
+
+</html>
